@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_307df00fd27c60c0280c0722b39893fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="
+position: fixed;
+bottom: 50px; left: 50px; width: 200px;
+background-color: white; z-index:9999; font-size:14px;
+border:2px solid grey; padding: 10px;
+">
+<b>LISA Clusters</b><br><br>
+
+<span style="color:red;">●</span> High-High<br>
+<span style="color:blue;">●</span> Low-Low<br>
+<span style="color:green;">●</span> Low-High<br>
+<span style="color:orange;">●</span> High-Low<br>
+<span style="color:gray;">●</span> Not Significant
+</div>
+    
+            <div class="folium-map" id="map_307df00fd27c60c0280c0722b39893fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_307df00fd27c60c0280c0722b39893fd = L.map(
+                "map_307df00fd27c60c0280c0722b39893fd",
+                {
+                    center: [12.97, 77.59],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c47ccdd55c7bad0a41b50549f18b5c4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9c47ccdd55c7bad0a41b50549f18b5c4.addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+            var circle_marker_ffe2947a1a1cfe87d73c1088f74e9aea = L.circleMarker(
+                [12.9112758, 77.6045654],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_dbb0eff732ff695f91d6627588022551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56de154fabed73c58c4736a7574e7fc2 = $(`<div id="html_56de154fabed73c58c4736a7574e7fc2" style="width: 100.0%; height: 100.0%;">         Location: BTM , Bangalore , Karnataka , India<br>         Avg Rating: 3.3<br>         Cluster: Not Significant         </div>`)[0];
+                popup_dbb0eff732ff695f91d6627588022551.setContent(html_56de154fabed73c58c4736a7574e7fc2);
+            
+        
+
+        circle_marker_ffe2947a1a1cfe87d73c1088f74e9aea.bindPopup(popup_dbb0eff732ff695f91d6627588022551)
+        ;
+
+        
+    
+    
+            var circle_marker_f01ae78a66e512d54e0e7c1f1e840735 = L.circleMarker(
+                [12.9278196, 77.556621],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_c7d3ddd43614093c3c9dda555e8a6c58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd0e6c7631aca387ef526284bf55fb5a = $(`<div id="html_fd0e6c7631aca387ef526284bf55fb5a" style="width: 100.0%; height: 100.0%;">         Location: Banashankari , Bangalore , Karnataka , India<br>         Avg Rating: 3.39<br>         Cluster: Not Significant         </div>`)[0];
+                popup_c7d3ddd43614093c3c9dda555e8a6c58.setContent(html_fd0e6c7631aca387ef526284bf55fb5a);
+            
+        
+
+        circle_marker_f01ae78a66e512d54e0e7c1f1e840735.bindPopup(popup_c7d3ddd43614093c3c9dda555e8a6c58)
+        ;
+
+        
+    
+    
+            var circle_marker_273d9ee1639669d5ecb8ab54b71c029a = L.circleMarker(
+                [13.0141618, 77.6518539],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_4d4ba7f1a190766cfa3d4b9869772755 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0021d588c677c499063d1f8f96f1318e = $(`<div id="html_0021d588c677c499063d1f8f96f1318e" style="width: 100.0%; height: 100.0%;">         Location: Banaswadi , Bangalore , Karnataka , India<br>         Avg Rating: 3.36<br>         Cluster: Not Significant         </div>`)[0];
+                popup_4d4ba7f1a190766cfa3d4b9869772755.setContent(html_0021d588c677c499063d1f8f96f1318e);
+            
+        
+
+        circle_marker_273d9ee1639669d5ecb8ab54b71c029a.bindPopup(popup_4d4ba7f1a190766cfa3d4b9869772755)
+        ;
+
+        
+    
+    
+            var circle_marker_d2db91fcf2ddbc9a9bfa917b621ebf5a = L.circleMarker(
+                [12.8719119, 77.593896],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_a3eb0e60b489090b684e200a74243443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e09919f0862821077a0513fff861e73a = $(`<div id="html_e09919f0862821077a0513fff861e73a" style="width: 100.0%; height: 100.0%;">         Location: Bannerghatta Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.27<br>         Cluster: Not Significant         </div>`)[0];
+                popup_a3eb0e60b489090b684e200a74243443.setContent(html_e09919f0862821077a0513fff861e73a);
+            
+        
+
+        circle_marker_d2db91fcf2ddbc9a9bfa917b621ebf5a.bindPopup(popup_a3eb0e60b489090b684e200a74243443)
+        ;
+
+        
+    
+    
+            var circle_marker_162c0fb925efc2dda03b5ced82be7666 = L.circleMarker(
+                [12.9417261, 77.5755021],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_ca8f0a912b84000b14e6d1fbb9f25424 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_821dd6f3bd8196f5b2681048f3f2c331 = $(`<div id="html_821dd6f3bd8196f5b2681048f3f2c331" style="width: 100.0%; height: 100.0%;">         Location: Basavanagudi , Bangalore , Karnataka , India<br>         Avg Rating: 3.47<br>         Cluster: Not Significant         </div>`)[0];
+                popup_ca8f0a912b84000b14e6d1fbb9f25424.setContent(html_821dd6f3bd8196f5b2681048f3f2c331);
+            
+        
+
+        circle_marker_162c0fb925efc2dda03b5ced82be7666.bindPopup(popup_ca8f0a912b84000b14e6d1fbb9f25424)
+        ;
+
+        
+    
+    
+            var circle_marker_5411662c268715571591fdc6c0bb1108 = L.circleMarker(
+                [12.9320495, 77.6842915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_749199578b4d32ba5241f6b1bc243cb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0244139a435c5f0f54814f6401b9b497 = $(`<div id="html_0244139a435c5f0f54814f6401b9b497" style="width: 100.0%; height: 100.0%;">         Location: Bellandur , Bangalore , Karnataka , India<br>         Avg Rating: 3.23<br>         Cluster: Low-Low         </div>`)[0];
+                popup_749199578b4d32ba5241f6b1bc243cb3.setContent(html_0244139a435c5f0f54814f6401b9b497);
+            
+        
+
+        circle_marker_5411662c268715571591fdc6c0bb1108.bindPopup(popup_749199578b4d32ba5241f6b1bc243cb3)
+        ;
+
+        
+    
+    
+            var circle_marker_8ee15dda45c992c68a34e3676c9a0a3a = L.circleMarker(
+                [12.9034581, 77.6230028],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_0796528089fec6218bee2a9f0ccb94d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c8fc89e72842615634654d2c5115687 = $(`<div id="html_4c8fc89e72842615634654d2c5115687" style="width: 100.0%; height: 100.0%;">         Location: Bommanahalli , Bangalore , Karnataka , India<br>         Avg Rating: 2.93<br>         Cluster: Not Significant         </div>`)[0];
+                popup_0796528089fec6218bee2a9f0ccb94d0.setContent(html_4c8fc89e72842615634654d2c5115687);
+            
+        
+
+        circle_marker_8ee15dda45c992c68a34e3676c9a0a3a.bindPopup(popup_0796528089fec6218bee2a9f0ccb94d0)
+        ;
+
+        
+    
+    
+            var circle_marker_347c8b2178d199e1abcd17da7b6327e4 = L.circleMarker(
+                [12.9673497, 77.6064374],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_f7c593e8d11bd98acf9aeea93b4e4be0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60e37db3efaf1ee62d2fd2b5cef0c8e2 = $(`<div id="html_60e37db3efaf1ee62d2fd2b5cef0c8e2" style="width: 100.0%; height: 100.0%;">         Location: Brigade Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.57<br>         Cluster: High-High         </div>`)[0];
+                popup_f7c593e8d11bd98acf9aeea93b4e4be0.setContent(html_60e37db3efaf1ee62d2fd2b5cef0c8e2);
+            
+        
+
+        circle_marker_347c8b2178d199e1abcd17da7b6327e4.bindPopup(popup_f7c593e8d11bd98acf9aeea93b4e4be0)
+        ;
+
+        
+    
+    
+            var circle_marker_4878dd2268c615035322392deed7740a = L.circleMarker(
+                [12.9652094, 77.717936],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_1aea2d746b3d81993f943e8731397820 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fc409ad798d7e0ce51334d75bd8606b = $(`<div id="html_4fc409ad798d7e0ce51334d75bd8606b" style="width: 100.0%; height: 100.0%;">         Location: Brookefield , Bangalore , Karnataka , India<br>         Avg Rating: 3.27<br>         Cluster: Not Significant         </div>`)[0];
+                popup_1aea2d746b3d81993f943e8731397820.setContent(html_4fc409ad798d7e0ce51334d75bd8606b);
+            
+        
+
+        circle_marker_4878dd2268c615035322392deed7740a.bindPopup(popup_1aea2d746b3d81993f943e8731397820)
+        ;
+
+        
+    
+    
+            var circle_marker_8b89364b85784bd7a3e1b4820845e9c3 = L.circleMarker(
+                [12.9855509, 77.668072],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_04535f464106fb361cd15977b285be6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e73cbd590ff517338187439c20c1902 = $(`<div id="html_8e73cbd590ff517338187439c20c1902" style="width: 100.0%; height: 100.0%;">         Location: CV Raman Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.24<br>         Cluster: Not Significant         </div>`)[0];
+                popup_04535f464106fb361cd15977b285be6c.setContent(html_8e73cbd590ff517338187439c20c1902);
+            
+        
+
+        circle_marker_8b89364b85784bd7a3e1b4820845e9c3.bindPopup(popup_04535f464106fb361cd15977b285be6c)
+        ;
+
+        
+    
+    
+            var circle_marker_e7e035d65fa13827f3967da2a3f93aec = L.circleMarker(
+                [12.9730088, 77.5804711],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_739fe6faebb11423fe1625da23b2dc0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e37864f569577a67650009b9d6c4ca8 = $(`<div id="html_7e37864f569577a67650009b9d6c4ca8" style="width: 100.0%; height: 100.0%;">         Location: Central Bangalore , Bangalore , Karnataka , India<br>         Avg Rating: 3.7<br>         Cluster: High-High         </div>`)[0];
+                popup_739fe6faebb11423fe1625da23b2dc0c.setContent(html_7e37864f569577a67650009b9d6c4ca8);
+            
+        
+
+        circle_marker_e7e035d65fa13827f3967da2a3f93aec.bindPopup(popup_739fe6faebb11423fe1625da23b2dc0c)
+        ;
+
+        
+    
+    
+            var circle_marker_f4ce8f38e7238ff7f22c52260e538508 = L.circleMarker(
+                [12.9734314, 77.6517971],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_15d6e170ba5e8a71c2f7ce55f656d4b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63ecb1bb3907c6e8f2ebd8b1ce855fdd = $(`<div id="html_63ecb1bb3907c6e8f2ebd8b1ce855fdd" style="width: 100.0%; height: 100.0%;">         Location: Church Street , Bangalore , Karnataka , India<br>         Avg Rating: 3.96<br>         Cluster: Not Significant         </div>`)[0];
+                popup_15d6e170ba5e8a71c2f7ce55f656d4b2.setContent(html_63ecb1bb3907c6e8f2ebd8b1ce855fdd);
+            
+        
+
+        circle_marker_f4ce8f38e7238ff7f22c52260e538508.bindPopup(popup_15d6e170ba5e8a71c2f7ce55f656d4b2)
+        ;
+
+        
+    
+    
+            var circle_marker_1fc8d7e5b27c294a600a64470e26c313 = L.circleMarker(
+                [12.965718, 77.5762705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_a4b0aec3ddebe87f6fdb0cfecfe4fba2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31344537a183457056916ed7b37431cc = $(`<div id="html_31344537a183457056916ed7b37431cc" style="width: 100.0%; height: 100.0%;">         Location: City Market , Bangalore , Karnataka , India<br>         Avg Rating: 3.34<br>         Cluster: High-High         </div>`)[0];
+                popup_a4b0aec3ddebe87f6fdb0cfecfe4fba2.setContent(html_31344537a183457056916ed7b37431cc);
+            
+        
+
+        circle_marker_1fc8d7e5b27c294a600a64470e26c313.bindPopup(popup_a4b0aec3ddebe87f6fdb0cfecfe4fba2)
+        ;
+
+        
+    
+    
+            var circle_marker_f247eae535883f381cb8618c60e429f4 = L.circleMarker(
+                [12.9822157, 77.6082513],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_5bffc5214e297d75c4d437e2fce9518a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1c027486c81af30346452a5ec53d3cd = $(`<div id="html_a1c027486c81af30346452a5ec53d3cd" style="width: 100.0%; height: 100.0%;">         Location: Commercial Street , Bangalore , Karnataka , India<br>         Avg Rating: 3.1<br>         Cluster: Low-High         </div>`)[0];
+                popup_5bffc5214e297d75c4d437e2fce9518a.setContent(html_a1c027486c81af30346452a5ec53d3cd);
+            
+        
+
+        circle_marker_f247eae535883f381cb8618c60e429f4.bindPopup(popup_5bffc5214e297d75c4d437e2fce9518a)
+        ;
+
+        
+    
+    
+            var circle_marker_1e3e92383dc170a1a44a1092b037a9dc = L.circleMarker(
+                [12.9857312, 77.5960537],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_dc5ef5994c19871d5bf7dfb264097114 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1192b1d1acfcb148d7655d31e1ee2195 = $(`<div id="html_1192b1d1acfcb148d7655d31e1ee2195" style="width: 100.0%; height: 100.0%;">         Location: Cunningham Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.89<br>         Cluster: Not Significant         </div>`)[0];
+                popup_dc5ef5994c19871d5bf7dfb264097114.setContent(html_1192b1d1acfcb148d7655d31e1ee2195);
+            
+        
+
+        circle_marker_1e3e92383dc170a1a44a1092b037a9dc.bindPopup(popup_dc5ef5994c19871d5bf7dfb264097114)
+        ;
+
+        
+    
+    
+            var circle_marker_d55631f6e61b79e9e5b1289d9f536c71 = L.circleMarker(
+                [12.9624669, 77.6381958],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_8db2fa1e7b557c9b07d73eadd1843b11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbdf0f8f909d9bf6602c993753a95f80 = $(`<div id="html_fbdf0f8f909d9bf6602c993753a95f80" style="width: 100.0%; height: 100.0%;">         Location: Domlur , Bangalore , Karnataka , India<br>         Avg Rating: 3.36<br>         Cluster: Not Significant         </div>`)[0];
+                popup_8db2fa1e7b557c9b07d73eadd1843b11.setContent(html_fbdf0f8f909d9bf6602c993753a95f80);
+            
+        
+
+        circle_marker_d55631f6e61b79e9e5b1289d9f536c71.bindPopup(popup_8db2fa1e7b557c9b07d73eadd1843b11)
+        ;
+
+        
+    
+    
+            var circle_marker_8fed8990dac45a2a7a901009284764dd = L.circleMarker(
+                [12.9287596, 77.6287122],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_be4122fd5dd349a9aa18623ec8b0411d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59fc40c125a30733ad8018b347fb9379 = $(`<div id="html_59fc40c125a30733ad8018b347fb9379" style="width: 100.0%; height: 100.0%;">         Location: East Bangalore , Bangalore , Karnataka , India<br>         Avg Rating: 3.2<br>         Cluster: Not Significant         </div>`)[0];
+                popup_be4122fd5dd349a9aa18623ec8b0411d.setContent(html_59fc40c125a30733ad8018b347fb9379);
+            
+        
+
+        circle_marker_8fed8990dac45a2a7a901009284764dd.bindPopup(popup_be4122fd5dd349a9aa18623ec8b0411d)
+        ;
+
+        
+    
+    
+            var circle_marker_cac2d7a44166516c097717a58fac07c4 = L.circleMarker(
+                [12.945245, 77.6274776],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_1928486e089a5568d4de158b425be2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a47ee9825c383fd1f6f248cfcba0be1e = $(`<div id="html_a47ee9825c383fd1f6f248cfcba0be1e" style="width: 100.0%; height: 100.0%;">         Location: Ejipura , Bangalore , Karnataka , India<br>         Avg Rating: 3.01<br>         Cluster: Low-High         </div>`)[0];
+                popup_1928486e089a5568d4de158b425be2b7.setContent(html_a47ee9825c383fd1f6f248cfcba0be1e);
+            
+        
+
+        circle_marker_cac2d7a44166516c097717a58fac07c4.bindPopup(popup_1928486e089a5568d4de158b425be2b7)
+        ;
+
+        
+    
+    
+            var circle_marker_9abf867cd8f1c750bea769a7520c0cee = L.circleMarker(
+                [12.8487599, 77.648253],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_1b9082449a3f44a2797cb6f1f6aa1a7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_774e96ebc0fe82e652cb10347bd0b8d8 = $(`<div id="html_774e96ebc0fe82e652cb10347bd0b8d8" style="width: 100.0%; height: 100.0%;">         Location: Electronic City , Bangalore , Karnataka , India<br>         Avg Rating: 3.04<br>         Cluster: Not Significant         </div>`)[0];
+                popup_1b9082449a3f44a2797cb6f1f6aa1a7f.setContent(html_774e96ebc0fe82e652cb10347bd0b8d8);
+            
+        
+
+        circle_marker_9abf867cd8f1c750bea769a7520c0cee.bindPopup(popup_1b9082449a3f44a2797cb6f1f6aa1a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_7f66783a9fb3f090613fd57bea525e7c = L.circleMarker(
+                [12.9975851, 77.6136744],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_8affebbb41d34f4df29dc885c94aeb74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9240be3956b9517e2baf4a366600f0f = $(`<div id="html_b9240be3956b9517e2baf4a366600f0f" style="width: 100.0%; height: 100.0%;">         Location: Frazer Town , Bangalore , Karnataka , India<br>         Avg Rating: 3.58<br>         Cluster: Not Significant         </div>`)[0];
+                popup_8affebbb41d34f4df29dc885c94aeb74.setContent(html_b9240be3956b9517e2baf4a366600f0f);
+            
+        
+
+        circle_marker_7f66783a9fb3f090613fd57bea525e7c.bindPopup(popup_8affebbb41d34f4df29dc885c94aeb74)
+        ;
+
+        
+    
+    
+            var circle_marker_ddd4a80893c1d9db56df87a7845a34e3 = L.circleMarker(
+                [13.031992, 77.6280789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_347f20e6ffd93a7f69fcf8b918d36661 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3748f4c9e3a21fd1614a1b4061624705 = $(`<div id="html_3748f4c9e3a21fd1614a1b4061624705" style="width: 100.0%; height: 100.0%;">         Location: HBR Layout , Bangalore , Karnataka , India<br>         Avg Rating: 3.28<br>         Cluster: Not Significant         </div>`)[0];
+                popup_347f20e6ffd93a7f69fcf8b918d36661.setContent(html_3748f4c9e3a21fd1614a1b4061624705);
+            
+        
+
+        circle_marker_ddd4a80893c1d9db56df87a7845a34e3.bindPopup(popup_347f20e6ffd93a7f69fcf8b918d36661)
+        ;
+
+        
+    
+    
+            var circle_marker_916aeedf1335837dc7c5ae7264ba2c80 = L.circleMarker(
+                [12.9116225, 77.6388622],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_d552f90165329177632933d54cf4a0f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_898c3f08d56b891f17ca19d967251558 = $(`<div id="html_898c3f08d56b891f17ca19d967251558" style="width: 100.0%; height: 100.0%;">         Location: HSR , Bangalore , Karnataka , India<br>         Avg Rating: 3.48<br>         Cluster: Not Significant         </div>`)[0];
+                popup_d552f90165329177632933d54cf4a0f5.setContent(html_898c3f08d56b891f17ca19d967251558);
+            
+        
+
+        circle_marker_916aeedf1335837dc7c5ae7264ba2c80.bindPopup(popup_d552f90165329177632933d54cf4a0f5)
+        ;
+
+        
+    
+    
+            var circle_marker_8fe2330df82596a75a7af215211e4b0b = L.circleMarker(
+                [13.0382184, 77.5919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_772051b9f94bb2a3e9f7dc0484d90cd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8338f09dea8c3dfbb5e123e9a1ee619 = $(`<div id="html_f8338f09dea8c3dfbb5e123e9a1ee619" style="width: 100.0%; height: 100.0%;">         Location: Hebbal , Bangalore , Karnataka , India<br>         Avg Rating: 0.0<br>         Cluster: Low-Low         </div>`)[0];
+                popup_772051b9f94bb2a3e9f7dc0484d90cd4.setContent(html_f8338f09dea8c3dfbb5e123e9a1ee619);
+            
+        
+
+        circle_marker_8fe2330df82596a75a7af215211e4b0b.bindPopup(popup_772051b9f94bb2a3e9f7dc0484d90cd4)
+        ;
+
+        
+    
+    
+            var circle_marker_f6bd7681a506406669f09a0a8d5836b3 = L.circleMarker(
+                [13.037077, 77.6413572],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_82a4ee5c11b1a83d775df7b04fe9defb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51f0495618af0efd84784c0bae125986 = $(`<div id="html_51f0495618af0efd84784c0bae125986" style="width: 100.0%; height: 100.0%;">         Location: Hennur , Bangalore , Karnataka , India<br>         Avg Rating: 3.09<br>         Cluster: Not Significant         </div>`)[0];
+                popup_82a4ee5c11b1a83d775df7b04fe9defb.setContent(html_51f0495618af0efd84784c0bae125986);
+            
+        
+
+        circle_marker_f6bd7681a506406669f09a0a8d5836b3.bindPopup(popup_82a4ee5c11b1a83d775df7b04fe9defb)
+        ;
+
+        
+    
+    
+            var circle_marker_d5450da1e215f4642680297d93eb90e6 = L.circleMarker(
+                [12.9527874, 77.6052865],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_bb968daee5fbc697ff1e02dcba4c61ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d62becdabbca236d1d092bd7c7bd9db8 = $(`<div id="html_d62becdabbca236d1d092bd7c7bd9db8" style="width: 100.0%; height: 100.0%;">         Location: Hosur Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.65<br>         Cluster: Not Significant         </div>`)[0];
+                popup_bb968daee5fbc697ff1e02dcba4c61ad.setContent(html_d62becdabbca236d1d092bd7c7bd9db8);
+            
+        
+
+        circle_marker_d5450da1e215f4642680297d93eb90e6.bindPopup(popup_bb968daee5fbc697ff1e02dcba4c61ad)
+        ;
+
+        
+    
+    
+            var circle_marker_5504a76f33951ce633ecbb9c7ee65058 = L.circleMarker(
+                [12.9732913, 77.6404672],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_8dd5d924ad5dcd51c1daee49f0793691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c9ebb3693e53b16c3b3d0515ebf5218 = $(`<div id="html_6c9ebb3693e53b16c3b3d0515ebf5218" style="width: 100.0%; height: 100.0%;">         Location: Indiranagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.61<br>         Cluster: Not Significant         </div>`)[0];
+                popup_8dd5d924ad5dcd51c1daee49f0793691.setContent(html_6c9ebb3693e53b16c3b3d0515ebf5218);
+            
+        
+
+        circle_marker_5504a76f33951ce633ecbb9c7ee65058.bindPopup(popup_8dd5d924ad5dcd51c1daee49f0793691)
+        ;
+
+        
+    
+    
+            var circle_marker_86cc2e3f25e3cc141690de20c6a6fe7c = L.circleMarker(
+                [12.9764122, 77.6017437],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_28e93bb837b5bcd66cac04d37ecce5ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a658ef1da530dada233e41b8e7f44f5 = $(`<div id="html_7a658ef1da530dada233e41b8e7f44f5" style="width: 100.0%; height: 100.0%;">         Location: Infantry Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.82<br>         Cluster: High-High         </div>`)[0];
+                popup_28e93bb837b5bcd66cac04d37ecce5ca.setContent(html_7a658ef1da530dada233e41b8e7f44f5);
+            
+        
+
+        circle_marker_86cc2e3f25e3cc141690de20c6a6fe7c.bindPopup(popup_28e93bb837b5bcd66cac04d37ecce5ca)
+        ;
+
+        
+    
+    
+            var circle_marker_f5b1bc816df8aca68a1f9ba629d0c48d = L.circleMarker(
+                [12.9096941, 77.5866067],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_668a642012acbc4ef282a2a34436609e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_734f3d6ec67750d59240c6c24ef80d62 = $(`<div id="html_734f3d6ec67750d59240c6c24ef80d62" style="width: 100.0%; height: 100.0%;">         Location: JP Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.41<br>         Cluster: Not Significant         </div>`)[0];
+                popup_668a642012acbc4ef282a2a34436609e.setContent(html_734f3d6ec67750d59240c6c24ef80d62);
+            
+        
+
+        circle_marker_f5b1bc816df8aca68a1f9ba629d0c48d.bindPopup(popup_668a642012acbc4ef282a2a34436609e)
+        ;
+
+        
+    
+    
+            var circle_marker_bd156301311adf60c39f74c7a11ec7a0 = L.circleMarker(
+                [12.9292731, 77.5824229],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_c23c4b5fddcf53db10a2580b4e81c31d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd11c80216c2873b3bbe43fc1471e96e = $(`<div id="html_bd11c80216c2873b3bbe43fc1471e96e" style="width: 100.0%; height: 100.0%;">         Location: Jayanagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.62<br>         Cluster: Not Significant         </div>`)[0];
+                popup_c23c4b5fddcf53db10a2580b4e81c31d.setContent(html_bd11c80216c2873b3bbe43fc1471e96e);
+            
+        
+
+        circle_marker_bd156301311adf60c39f74c7a11ec7a0.bindPopup(popup_c23c4b5fddcf53db10a2580b4e81c31d)
+        ;
+
+        
+    
+    
+            var circle_marker_c99ed35560e0b8cb2695b2325f9c49b6 = L.circleMarker(
+                [12.9678074, 77.6568367],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_df6e394a85f61d16bc060a2c8aab7fe0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66249c5a5a9933723ac17e79bae03098 = $(`<div id="html_66249c5a5a9933723ac17e79bae03098" style="width: 100.0%; height: 100.0%;">         Location: Jeevan Bhima Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.38<br>         Cluster: Not Significant         </div>`)[0];
+                popup_df6e394a85f61d16bc060a2c8aab7fe0.setContent(html_66249c5a5a9933723ac17e79bae03098);
+            
+        
+
+        circle_marker_c99ed35560e0b8cb2695b2325f9c49b6.bindPopup(popup_df6e394a85f61d16bc060a2c8aab7fe0)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf5148427f2c40ce6b93c818e05ba17 = L.circleMarker(
+                [12.9812262, 77.6745845],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_e6fcbeb360960a37dd96b4eb7cd8463c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccb59147c95abf63dac06f15ed5922ce = $(`<div id="html_ccb59147c95abf63dac06f15ed5922ce" style="width: 100.0%; height: 100.0%;">         Location: Kaggadasapura , Bangalore , Karnataka , India<br>         Avg Rating: 4.0<br>         Cluster: Not Significant         </div>`)[0];
+                popup_e6fcbeb360960a37dd96b4eb7cd8463c.setContent(html_ccb59147c95abf63dac06f15ed5922ce);
+            
+        
+
+        circle_marker_0cf5148427f2c40ce6b93c818e05ba17.bindPopup(popup_e6fcbeb360960a37dd96b4eb7cd8463c)
+        ;
+
+        
+    
+    
+            var circle_marker_90f5861c18deb77fdb3d08d20e3292b8 = L.circleMarker(
+                [13.0221416, 77.6403368],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_6ea17137a050bce7454acc7c1022442d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1b2aab6c596b6d163f9449bbd7d14e5 = $(`<div id="html_f1b2aab6c596b6d163f9449bbd7d14e5" style="width: 100.0%; height: 100.0%;">         Location: Kalyan Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.52<br>         Cluster: Not Significant         </div>`)[0];
+                popup_6ea17137a050bce7454acc7c1022442d.setContent(html_f1b2aab6c596b6d163f9449bbd7d14e5);
+            
+        
+
+        circle_marker_90f5861c18deb77fdb3d08d20e3292b8.bindPopup(popup_6ea17137a050bce7454acc7c1022442d)
+        ;
+
+        
+    
+    
+            var circle_marker_b564c79e8903d4eac1573d1db3b6af66 = L.circleMarker(
+                [13.0148544, 77.6382029],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_e14cae54c11c0532b81f7c1a24ac84c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31f833c75ab4e9124304a6251b063f2b = $(`<div id="html_31f833c75ab4e9124304a6251b063f2b" style="width: 100.0%; height: 100.0%;">         Location: Kammanahalli , Bangalore , Karnataka , India<br>         Avg Rating: 3.5<br>         Cluster: Not Significant         </div>`)[0];
+                popup_e14cae54c11c0532b81f7c1a24ac84c3.setContent(html_31f833c75ab4e9124304a6251b063f2b);
+            
+        
+
+        circle_marker_b564c79e8903d4eac1573d1db3b6af66.bindPopup(popup_e14cae54c11c0532b81f7c1a24ac84c3)
+        ;
+
+        
+    
+    
+            var circle_marker_8e34cf0578dd9d2361c8c8edb17233f2 = L.circleMarker(
+                [12.9235161, 77.5761812],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_c60cc4e71a72cf0c7249fd01c7fec447 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59af4743940d3fd2e0d1a1439b40670a = $(`<div id="html_59af4743940d3fd2e0d1a1439b40670a" style="width: 100.0%; height: 100.0%;">         Location: Kanakapura Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.48<br>         Cluster: Not Significant         </div>`)[0];
+                popup_c60cc4e71a72cf0c7249fd01c7fec447.setContent(html_59af4743940d3fd2e0d1a1439b40670a);
+            
+        
+
+        circle_marker_8e34cf0578dd9d2361c8c8edb17233f2.bindPopup(popup_c60cc4e71a72cf0c7249fd01c7fec447)
+        ;
+
+        
+    
+    
+            var circle_marker_28a1449e9eea7362b01a958ce02d8eda = L.circleMarker(
+                [12.9176571, 77.4837568],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_52b30266023381c9d3891de9558d54ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eebe7429511af58c8d20e40588e9a077 = $(`<div id="html_eebe7429511af58c8d20e40588e9a077" style="width: 100.0%; height: 100.0%;">         Location: Kengeri , Bangalore , Karnataka , India<br>         Avg Rating: 3.72<br>         Cluster: Not Significant         </div>`)[0];
+                popup_52b30266023381c9d3891de9558d54ca.setContent(html_eebe7429511af58c8d20e40588e9a077);
+            
+        
+
+        circle_marker_28a1449e9eea7362b01a958ce02d8eda.bindPopup(popup_52b30266023381c9d3891de9558d54ca)
+        ;
+
+        
+    
+    
+            var circle_marker_4d6186354c7a68ed1c724a138d3a2649 = L.circleMarker(
+                [12.9357366, 77.624081],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_fccf693bc76d5af2b0bfbc24b0746073 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4824869c6ab05e7030896259723c80a9 = $(`<div id="html_4824869c6ab05e7030896259723c80a9" style="width: 100.0%; height: 100.0%;">         Location: Koramangala , Bangalore , Karnataka , India<br>         Avg Rating: 3.57<br>         Cluster: High-High         </div>`)[0];
+                popup_fccf693bc76d5af2b0bfbc24b0746073.setContent(html_4824869c6ab05e7030896259723c80a9);
+            
+        
+
+        circle_marker_4d6186354c7a68ed1c724a138d3a2649.bindPopup(popup_fccf693bc76d5af2b0bfbc24b0746073)
+        ;
+
+        
+    
+    
+            var circle_marker_bb32fe68eb4d4682a19bbd45098d155b = L.circleMarker(
+                [12.9277245, 77.6327822],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_ab93138376fdbae156c5a52e48bd5eb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53c709fb87a7207d649b0430f610e74f = $(`<div id="html_53c709fb87a7207d649b0430f610e74f" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 1st Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.23<br>         Cluster: Not Significant         </div>`)[0];
+                popup_ab93138376fdbae156c5a52e48bd5eb7.setContent(html_53c709fb87a7207d649b0430f610e74f);
+            
+        
+
+        circle_marker_bb32fe68eb4d4682a19bbd45098d155b.bindPopup(popup_ab93138376fdbae156c5a52e48bd5eb7)
+        ;
+
+        
+    
+    
+            var circle_marker_e0b983c445438ee6974d306e8cad87bf = L.circleMarker(
+                [12.9243692, 77.6242433],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_240bd35e826a5546fd9bc4bc315ae782 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fee188fd4800e05fdd7f9dc8ffd2e0b1 = $(`<div id="html_fee188fd4800e05fdd7f9dc8ffd2e0b1" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 2nd Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.52<br>         Cluster: Not Significant         </div>`)[0];
+                popup_240bd35e826a5546fd9bc4bc315ae782.setContent(html_fee188fd4800e05fdd7f9dc8ffd2e0b1);
+            
+        
+
+        circle_marker_e0b983c445438ee6974d306e8cad87bf.bindPopup(popup_240bd35e826a5546fd9bc4bc315ae782)
+        ;
+
+        
+    
+    
+            var circle_marker_4a641b9106c31574eec3d23f54191b3f = L.circleMarker(
+                [12.9282918, 77.6254034],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_85e8f3f32495f8eb677857cf36495fb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a5215a21277b9da531cf6e629c3dbbf = $(`<div id="html_1a5215a21277b9da531cf6e629c3dbbf" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 3rd Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.96<br>         Cluster: Not Significant         </div>`)[0];
+                popup_85e8f3f32495f8eb677857cf36495fb5.setContent(html_1a5215a21277b9da531cf6e629c3dbbf);
+            
+        
+
+        circle_marker_4a641b9106c31574eec3d23f54191b3f.bindPopup(popup_85e8f3f32495f8eb677857cf36495fb5)
+        ;
+
+        
+    
+    
+            var circle_marker_394a6b4d503b3aa20837090d0af17523 = L.circleMarker(
+                [12.9327778, 77.6294052],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_18d62751d60366d10e2ef426a11261b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3deafcbb1bbba3b1b8db0418ff26340e = $(`<div id="html_3deafcbb1bbba3b1b8db0418ff26340e" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 4th Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.79<br>         Cluster: Not Significant         </div>`)[0];
+                popup_18d62751d60366d10e2ef426a11261b1.setContent(html_3deafcbb1bbba3b1b8db0418ff26340e);
+            
+        
+
+        circle_marker_394a6b4d503b3aa20837090d0af17523.bindPopup(popup_18d62751d60366d10e2ef426a11261b1)
+        ;
+
+        
+    
+    
+            var circle_marker_3cde745dd09c99c8146a973fc7b9edd8 = L.circleMarker(
+                [12.9348429, 77.6189768],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_538d42ad3a69d4c4aba3030d781ee801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36d2526e36349dbddf7177b504836f6a = $(`<div id="html_36d2526e36349dbddf7177b504836f6a" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 5th Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.87<br>         Cluster: High-High         </div>`)[0];
+                popup_538d42ad3a69d4c4aba3030d781ee801.setContent(html_36d2526e36349dbddf7177b504836f6a);
+            
+        
+
+        circle_marker_3cde745dd09c99c8146a973fc7b9edd8.bindPopup(popup_538d42ad3a69d4c4aba3030d781ee801)
+        ;
+
+        
+    
+    
+            var circle_marker_148bae61f11d8a352368b92cd7067876 = L.circleMarker(
+                [12.9390255, 77.6238477],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_983caf051e88e0e4fab6e53fa3e92f54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e60e9b01fb274e47181309e271d5f752 = $(`<div id="html_e60e9b01fb274e47181309e271d5f752" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 6th Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.66<br>         Cluster: Not Significant         </div>`)[0];
+                popup_983caf051e88e0e4fab6e53fa3e92f54.setContent(html_e60e9b01fb274e47181309e271d5f752);
+            
+        
+
+        circle_marker_148bae61f11d8a352368b92cd7067876.bindPopup(popup_983caf051e88e0e4fab6e53fa3e92f54)
+        ;
+
+        
+    
+    
+            var circle_marker_ea8cb40f8a15707b58be4275c0d6c282 = L.circleMarker(
+                [12.9364846, 77.6134783],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_6dc7a3aadfc4d2b90c691fa43419bd6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_117f887799fa6d218411095dcbcba9ee = $(`<div id="html_117f887799fa6d218411095dcbcba9ee" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 7th Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.74<br>         Cluster: High-High         </div>`)[0];
+                popup_6dc7a3aadfc4d2b90c691fa43419bd6a.setContent(html_117f887799fa6d218411095dcbcba9ee);
+            
+        
+
+        circle_marker_ea8cb40f8a15707b58be4275c0d6c282.bindPopup(popup_6dc7a3aadfc4d2b90c691fa43419bd6a)
+        ;
+
+        
+    
+    
+            var circle_marker_2c5d8a795c9f4b8aa5a4f719f90f6344 = L.circleMarker(
+                [12.9408685, 77.617338],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_154a698f8931e13252c534f4a6156e13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1006c35fa458ac1fdcac77d67bf7cc86 = $(`<div id="html_1006c35fa458ac1fdcac77d67bf7cc86" style="width: 100.0%; height: 100.0%;">         Location: Koramangala 8th Block , Bangalore , Karnataka , India<br>         Avg Rating: 3.6<br>         Cluster: Not Significant         </div>`)[0];
+                popup_154a698f8931e13252c534f4a6156e13.setContent(html_1006c35fa458ac1fdcac77d67bf7cc86);
+            
+        
+
+        circle_marker_2c5d8a795c9f4b8aa5a4f719f90f6344.bindPopup(popup_154a698f8931e13252c534f4a6156e13)
+        ;
+
+        
+    
+    
+            var circle_marker_f97911228225c6601460ad1603bf2cc6 = L.circleMarker(
+                [12.9150398, 77.5678879],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_86bdf58f1ae0fd2e930de2d8da42ae83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7231ee527e29732382a88a163b3d2b37 = $(`<div id="html_7231ee527e29732382a88a163b3d2b37" style="width: 100.0%; height: 100.0%;">         Location: Kumaraswamy Layout , Bangalore , Karnataka , India<br>         Avg Rating: 3.32<br>         Cluster: Not Significant         </div>`)[0];
+                popup_86bdf58f1ae0fd2e930de2d8da42ae83.setContent(html_7231ee527e29732382a88a163b3d2b37);
+            
+        
+
+        circle_marker_f97911228225c6601460ad1603bf2cc6.bindPopup(popup_86bdf58f1ae0fd2e930de2d8da42ae83)
+        ;
+
+        
+    
+    
+            var circle_marker_bdf349bfe7ea5cc9f3d3de415ee61fc3 = L.circleMarker(
+                [12.957998, 77.6037312],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_618d921acbcfc7391c4904d8c4e320cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48cb1c7ba8cdfa07e98301e2081dbc23 = $(`<div id="html_48cb1c7ba8cdfa07e98301e2081dbc23" style="width: 100.0%; height: 100.0%;">         Location: Langford Town , Bangalore , Karnataka , India<br>         Avg Rating: 3.8<br>         Cluster: Not Significant         </div>`)[0];
+                popup_618d921acbcfc7391c4904d8c4e320cc.setContent(html_48cb1c7ba8cdfa07e98301e2081dbc23);
+            
+        
+
+        circle_marker_bdf349bfe7ea5cc9f3d3de415ee61fc3.bindPopup(popup_618d921acbcfc7391c4904d8c4e320cc)
+        ;
+
+        
+    
+    
+            var circle_marker_ab2997d8c9bac8a86f1799664bcdb23e = L.circleMarker(
+                [12.9722287, 77.5986661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_2974eb7f1031e56d5a8d5ff1c7cd9f5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9be195f807a97fb590c90767cb6fe23 = $(`<div id="html_f9be195f807a97fb590c90767cb6fe23" style="width: 100.0%; height: 100.0%;">         Location: Lavelle Road , Bangalore , Karnataka , India<br>         Avg Rating: 4.02<br>         Cluster: High-High         </div>`)[0];
+                popup_2974eb7f1031e56d5a8d5ff1c7cd9f5f.setContent(html_f9be195f807a97fb590c90767cb6fe23);
+            
+        
+
+        circle_marker_ab2997d8c9bac8a86f1799664bcdb23e.bindPopup(popup_2974eb7f1031e56d5a8d5ff1c7cd9f5f)
+        ;
+
+        
+    
+    
+            var circle_marker_51c9511ed3b3d2b28c5c0893eddebbee = L.circleMarker(
+                [12.9755264, 77.6067902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_e36029317637b80ba1e4df187fc415b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31769762e00cfb5b53598ff5f11e4313 = $(`<div id="html_31769762e00cfb5b53598ff5f11e4313" style="width: 100.0%; height: 100.0%;">         Location: MG Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.77<br>         Cluster: High-High         </div>`)[0];
+                popup_e36029317637b80ba1e4df187fc415b3.setContent(html_31769762e00cfb5b53598ff5f11e4313);
+            
+        
+
+        circle_marker_51c9511ed3b3d2b28c5c0893eddebbee.bindPopup(popup_e36029317637b80ba1e4df187fc415b3)
+        ;
+
+        
+    
+    
+            var circle_marker_7eb111cedb3327e1cd324fbc78dd2afd = L.circleMarker(
+                [12.9779079, 77.5723936],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_9e1f5ac5d47f5c3cfffd5ebd59442eee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eed5ea5d6a4bc0d7433087801c74c5b1 = $(`<div id="html_eed5ea5d6a4bc0d7433087801c74c5b1" style="width: 100.0%; height: 100.0%;">         Location: Majestic , Bangalore , Karnataka , India<br>         Avg Rating: 3.51<br>         Cluster: Not Significant         </div>`)[0];
+                popup_9e1f5ac5d47f5c3cfffd5ebd59442eee.setContent(html_eed5ea5d6a4bc0d7433087801c74c5b1);
+            
+        
+
+        circle_marker_7eb111cedb3327e1cd324fbc78dd2afd.bindPopup(popup_9e1f5ac5d47f5c3cfffd5ebd59442eee)
+        ;
+
+        
+    
+    
+            var circle_marker_c23540a801e9ffb074ceb469aab5002d = L.circleMarker(
+                [12.9552572, 77.6984163],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_2ecb1a4d25b9e323c9080461e1d8bca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2760c193ff3f8e53ddbf74ab68ffacc7 = $(`<div id="html_2760c193ff3f8e53ddbf74ab68ffacc7" style="width: 100.0%; height: 100.0%;">         Location: Marathahalli , Bangalore , Karnataka , India<br>         Avg Rating: 3.36<br>         Cluster: Not Significant         </div>`)[0];
+                popup_2ecb1a4d25b9e323c9080461e1d8bca7.setContent(html_2760c193ff3f8e53ddbf74ab68ffacc7);
+            
+        
+
+        circle_marker_c23540a801e9ffb074ceb469aab5002d.bindPopup(popup_2ecb1a4d25b9e323c9080461e1d8bca7)
+        ;
+
+        
+    
+    
+            var circle_marker_6f32f9c891252c63036cb1b119231722 = L.circleMarker(
+                [12.9467026, 77.5300705],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_211b12aaeae9bafd10388986c690e957 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c21079ee71923a46e7cc5099f971415e = $(`<div id="html_c21079ee71923a46e7cc5099f971415e" style="width: 100.0%; height: 100.0%;">         Location: Mysore Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.44<br>         Cluster: Not Significant         </div>`)[0];
+                popup_211b12aaeae9bafd10388986c690e957.setContent(html_c21079ee71923a46e7cc5099f971415e);
+            
+        
+
+        circle_marker_6f32f9c891252c63036cb1b119231722.bindPopup(popup_211b12aaeae9bafd10388986c690e957)
+        ;
+
+        
+    
+    
+            var circle_marker_3a929962bc598e181da6541831cd876f = L.circleMarker(
+                [13.0422794, 77.6248577],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_2989fe848dbbf1c5698bf3c1d8e70987 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_268a3e8419b62a3736a33b126d5a07a9 = $(`<div id="html_268a3e8419b62a3736a33b126d5a07a9" style="width: 100.0%; height: 100.0%;">         Location: Nagawara , Bangalore , Karnataka , India<br>         Avg Rating: 3.33<br>         Cluster: Not Significant         </div>`)[0];
+                popup_2989fe848dbbf1c5698bf3c1d8e70987.setContent(html_268a3e8419b62a3736a33b126d5a07a9);
+            
+        
+
+        circle_marker_3a929962bc598e181da6541831cd876f.bindPopup(popup_2989fe848dbbf1c5698bf3c1d8e70987)
+        ;
+
+        
+    
+    
+            var circle_marker_c6160e936bef9b7d57574e4537bce4f4 = L.circleMarker(
+                [13.0317368, 77.5701363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_74a72a1258687b0f1ec9e3b881ae8288 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49bb3eff62d8b69bc7b20da6e3e9ec50 = $(`<div id="html_49bb3eff62d8b69bc7b20da6e3e9ec50" style="width: 100.0%; height: 100.0%;">         Location: New BEL Road , Bangalore , Karnataka , India<br>         Avg Rating: 0.0<br>         Cluster: Low-Low         </div>`)[0];
+                popup_74a72a1258687b0f1ec9e3b881ae8288.setContent(html_49bb3eff62d8b69bc7b20da6e3e9ec50);
+            
+        
+
+        circle_marker_c6160e936bef9b7d57574e4537bce4f4.bindPopup(popup_74a72a1258687b0f1ec9e3b881ae8288)
+        ;
+
+        
+    
+    
+            var circle_marker_16827fcffddc785572fead6ce0e8c6af = L.circleMarker(
+                [13.0222347, 77.5671832],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_7e02eb0fd55741763ed4f84404d3df7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_829cd9599c394d47597dab232c58a39d = $(`<div id="html_829cd9599c394d47597dab232c58a39d" style="width: 100.0%; height: 100.0%;">         Location: North Bangalore , Bangalore , Karnataka , India<br>         Avg Rating: 2.5<br>         Cluster: Low-Low         </div>`)[0];
+                popup_7e02eb0fd55741763ed4f84404d3df7e.setContent(html_829cd9599c394d47597dab232c58a39d);
+            
+        
+
+        circle_marker_16827fcffddc785572fead6ce0e8c6af.bindPopup(popup_7e02eb0fd55741763ed4f84404d3df7e)
+        ;
+
+        
+    
+    
+            var circle_marker_457eea8b18ee8aaa6df7aa2d44109b49 = L.circleMarker(
+                [12.9571954, 77.674177],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_7b73f15011aa7e894b3c33f28f64dda5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45aff64f61c3e6578276ff9978d5b7c2 = $(`<div id="html_45aff64f61c3e6578276ff9978d5b7c2" style="width: 100.0%; height: 100.0%;">         Location: Old Airport Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.38<br>         Cluster: Not Significant         </div>`)[0];
+                popup_7b73f15011aa7e894b3c33f28f64dda5.setContent(html_45aff64f61c3e6578276ff9978d5b7c2);
+            
+        
+
+        circle_marker_457eea8b18ee8aaa6df7aa2d44109b49.bindPopup(popup_7b73f15011aa7e894b3c33f28f64dda5)
+        ;
+
+        
+    
+    
+            var circle_marker_4f8e7314aadee48f16563881a5c97356 = L.circleMarker(
+                [13.008356, 77.6941005],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_70e2ebc4f484c401a247810df2adc30a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8245954cc9032f8ef38ee931ce915854 = $(`<div id="html_8245954cc9032f8ef38ee931ce915854" style="width: 100.0%; height: 100.0%;">         Location: Old Madras Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.23<br>         Cluster: Not Significant         </div>`)[0];
+                popup_70e2ebc4f484c401a247810df2adc30a.setContent(html_8245954cc9032f8ef38ee931ce915854);
+            
+        
+
+        circle_marker_4f8e7314aadee48f16563881a5c97356.bindPopup(popup_70e2ebc4f484c401a247810df2adc30a)
+        ;
+
+        
+    
+    
+            var circle_marker_fb927a0be7b1bcc0704adec8f0f9f75d = L.circleMarker(
+                [13.0227204, 77.595715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_a6a7129432d60c41ae490240ac59c1fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ff8a0d20037be8228bb07acf5a84602 = $(`<div id="html_2ff8a0d20037be8228bb07acf5a84602" style="width: 100.0%; height: 100.0%;">         Location: RT Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.08<br>         Cluster: Low-Low         </div>`)[0];
+                popup_a6a7129432d60c41ae490240ac59c1fa.setContent(html_2ff8a0d20037be8228bb07acf5a84602);
+            
+        
+
+        circle_marker_fb927a0be7b1bcc0704adec8f0f9f75d.bindPopup(popup_a6a7129432d60c41ae490240ac59c1fa)
+        ;
+
+        
+    
+    
+            var circle_marker_9db4df905cccc2012014d7479abfbcbd = L.circleMarker(
+                [12.9819671, 77.5766178],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_6e4ec18cfb06225ad0ee7c25b63fa48f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f37f94921fa4a9bacc2fb384e96f511 = $(`<div id="html_8f37f94921fa4a9bacc2fb384e96f511" style="width: 100.0%; height: 100.0%;">         Location: Race Course Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.58<br>         Cluster: Not Significant         </div>`)[0];
+                popup_6e4ec18cfb06225ad0ee7c25b63fa48f.setContent(html_8f37f94921fa4a9bacc2fb384e96f511);
+            
+        
+
+        circle_marker_9db4df905cccc2012014d7479abfbcbd.bindPopup(popup_6e4ec18cfb06225ad0ee7c25b63fa48f)
+        ;
+
+        
+    
+    
+            var circle_marker_c588311f13f420cc22e89553cb0b104a = L.circleMarker(
+                [13.0005232, 77.5496166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_951a8131769067235e524bfef7650abc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5773ec76f3041e1e974f396c7ea806e4 = $(`<div id="html_5773ec76f3041e1e974f396c7ea806e4" style="width: 100.0%; height: 100.0%;">         Location: Rajajinagar , Bangalore , Karnataka , India<br>         Avg Rating: 0.0<br>         Cluster: Low-Low         </div>`)[0];
+                popup_951a8131769067235e524bfef7650abc.setContent(html_5773ec76f3041e1e974f396c7ea806e4);
+            
+        
+
+        circle_marker_c588311f13f420cc22e89553cb0b104a.bindPopup(popup_951a8131769067235e524bfef7650abc)
+        ;
+
+        
+    
+    
+            var circle_marker_ffbf13f8ceb883090e67c4fabdd42593 = L.circleMarker(
+                [12.9274413, 77.5155224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_6d43d6de8736baf6c5d4fcfc169c4924 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2794aaeb25747e03a743caef2b3bca7 = $(`<div id="html_f2794aaeb25747e03a743caef2b3bca7" style="width: 100.0%; height: 100.0%;">         Location: Rajarajeshwari Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.85<br>         Cluster: Not Significant         </div>`)[0];
+                popup_6d43d6de8736baf6c5d4fcfc169c4924.setContent(html_f2794aaeb25747e03a743caef2b3bca7);
+            
+        
+
+        circle_marker_ffbf13f8ceb883090e67c4fabdd42593.bindPopup(popup_6d43d6de8736baf6c5d4fcfc169c4924)
+        ;
+
+        
+    
+    
+            var circle_marker_7a5bc6f1b21a70e4da1ac6e0c386227e = L.circleMarker(
+                [13.0528665, 77.6205433],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_4f561bfce9da52aaee58e28451cf41f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11c49dc6954749e464991e64d0072ca3 = $(`<div id="html_11c49dc6954749e464991e64d0072ca3" style="width: 100.0%; height: 100.0%;">         Location: Residency Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.82<br>         Cluster: High-Low         </div>`)[0];
+                popup_4f561bfce9da52aaee58e28451cf41f0.setContent(html_11c49dc6954749e464991e64d0072ca3);
+            
+        
+
+        circle_marker_7a5bc6f1b21a70e4da1ac6e0c386227e.bindPopup(popup_4f561bfce9da52aaee58e28451cf41f0)
+        ;
+
+        
+    
+    
+            var circle_marker_627bc8e68d5ec3392372ac096dc8dff9 = L.circleMarker(
+                [12.9700504, 77.6169638],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_91698223e0c6e818632e63cfb88ebd3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92c1b7bb30fd27575821fa80e58a8e20 = $(`<div id="html_92c1b7bb30fd27575821fa80e58a8e20" style="width: 100.0%; height: 100.0%;">         Location: Richmond Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.64<br>         Cluster: Not Significant         </div>`)[0];
+                popup_91698223e0c6e818632e63cfb88ebd3f.setContent(html_92c1b7bb30fd27575821fa80e58a8e20);
+            
+        
+
+        circle_marker_627bc8e68d5ec3392372ac096dc8dff9.bindPopup(popup_91698223e0c6e818632e63cfb88ebd3f)
+        ;
+
+        
+    
+    
+            var circle_marker_6367f5d667b2335202c9bb3758cf3b4e = L.circleMarker(
+                [12.9578658, 77.6958748],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_466d8531d2c5b20872a7797e46c6a650 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0128c8b52d9b8ce4798552d5a9018f44 = $(`<div id="html_0128c8b52d9b8ce4798552d5a9018f44" style="width: 100.0%; height: 100.0%;">         Location: Sanjay Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 0.0<br>         Cluster: Not Significant         </div>`)[0];
+                popup_466d8531d2c5b20872a7797e46c6a650.setContent(html_0128c8b52d9b8ce4798552d5a9018f44);
+            
+        
+
+        circle_marker_6367f5d667b2335202c9bb3758cf3b4e.bindPopup(popup_466d8531d2c5b20872a7797e46c6a650)
+        ;
+
+        
+    
+    
+            var circle_marker_f97f9e7867a28c26543bfabbd599941c = L.circleMarker(
+                [12.9243414, 77.6448784],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_f44d9911444002e82992810a7479437a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22b66ee74deffc180af10452124ed44e = $(`<div id="html_22b66ee74deffc180af10452124ed44e" style="width: 100.0%; height: 100.0%;">         Location: Sarjapur Road , Bangalore , Karnataka , India<br>         Avg Rating: 3.44<br>         Cluster: Not Significant         </div>`)[0];
+                popup_f44d9911444002e82992810a7479437a.setContent(html_22b66ee74deffc180af10452124ed44e);
+            
+        
+
+        circle_marker_f97f9e7867a28c26543bfabbd599941c.bindPopup(popup_f44d9911444002e82992810a7479437a)
+        ;
+
+        
+    
+    
+            var circle_marker_f9310ff5d0f4a6c153eadc38c0c65d19 = L.circleMarker(
+                [12.9946631, 77.5747183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_d554709a68d87725ed5ebaad4e97589b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c1c556706ea87199f033e4084483eb3 = $(`<div id="html_4c1c556706ea87199f033e4084483eb3" style="width: 100.0%; height: 100.0%;">         Location: Seshadripuram , Bangalore , Karnataka , India<br>         Avg Rating: 3.4<br>         Cluster: High-High         </div>`)[0];
+                popup_d554709a68d87725ed5ebaad4e97589b.setContent(html_4c1c556706ea87199f033e4084483eb3);
+            
+        
+
+        circle_marker_f9310ff5d0f4a6c153eadc38c0c65d19.bindPopup(popup_d554709a68d87725ed5ebaad4e97589b)
+        ;
+
+        
+    
+    
+            var circle_marker_e1150b69abda49729eb81cf5297dd40b = L.circleMarker(
+                [12.9555367, 77.5924278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_a85dfd48e7323a8f6ad9800cada79805 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b8ca5812fee6a6d14be02acc414241c = $(`<div id="html_4b8ca5812fee6a6d14be02acc414241c" style="width: 100.0%; height: 100.0%;">         Location: Shanti Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.3<br>         Cluster: High-High         </div>`)[0];
+                popup_a85dfd48e7323a8f6ad9800cada79805.setContent(html_4b8ca5812fee6a6d14be02acc414241c);
+            
+        
+
+        circle_marker_e1150b69abda49729eb81cf5297dd40b.bindPopup(popup_a85dfd48e7323a8f6ad9800cada79805)
+        ;
+
+        
+    
+    
+            var circle_marker_158fabe2e57302ab9cf698b57ec0617b = L.circleMarker(
+                [12.9855286, 77.6054496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_fee126acce7343844109649f26014c02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c757959581894371e165f7e561e8217 = $(`<div id="html_6c757959581894371e165f7e561e8217" style="width: 100.0%; height: 100.0%;">         Location: Shivajinagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.48<br>         Cluster: High-High         </div>`)[0];
+                popup_fee126acce7343844109649f26014c02.setContent(html_6c757959581894371e165f7e561e8217);
+            
+        
+
+        circle_marker_158fabe2e57302ab9cf698b57ec0617b.bindPopup(popup_fee126acce7343844109649f26014c02)
+        ;
+
+        
+    
+    
+            var circle_marker_2ec29ddb6ef6f631e8e4e1de5dd7cfd4 = L.circleMarker(
+                [12.9287596, 77.6287122],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_6e34a3ee9c6137cc4e71ad67c00415b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52c642f5fba03821df62a2ca2108c820 = $(`<div id="html_52c642f5fba03821df62a2ca2108c820" style="width: 100.0%; height: 100.0%;">         Location: South Bangalore , Bangalore , Karnataka , India<br>         Avg Rating: 3.42<br>         Cluster: Not Significant         </div>`)[0];
+                popup_6e34a3ee9c6137cc4e71ad67c00415b1.setContent(html_52c642f5fba03821df62a2ca2108c820);
+            
+        
+
+        circle_marker_2ec29ddb6ef6f631e8e4e1de5dd7cfd4.bindPopup(popup_6e34a3ee9c6137cc4e71ad67c00415b1)
+        ;
+
+        
+    
+    
+            var circle_marker_5cc3cfe0498b75e1e01c3c2a21508bac = L.circleMarker(
+                [12.9727668, 77.6013071],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_53a3ad2a5d13653f6beb676f49fc52f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_232ec1ae8b1e7b5194e0f064e3c08e0e = $(`<div id="html_232ec1ae8b1e7b5194e0f064e3c08e0e" style="width: 100.0%; height: 100.0%;">         Location: St. Marks Road , Bangalore , Karnataka , India<br>         Avg Rating: 4.02<br>         Cluster: High-High         </div>`)[0];
+                popup_53a3ad2a5d13653f6beb676f49fc52f9.setContent(html_232ec1ae8b1e7b5194e0f064e3c08e0e);
+            
+        
+
+        circle_marker_5cc3cfe0498b75e1e01c3c2a21508bac.bindPopup(popup_53a3ad2a5d13653f6beb676f49fc52f9)
+        ;
+
+        
+    
+    
+            var circle_marker_c3819620e10bcaf32bfb69be361798e1 = L.circleMarker(
+                [12.973936, 77.6509982],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_f6dfd407add78b3f290f07b15b60130f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de5872d868bc79c057eae1026e14af36 = $(`<div id="html_de5872d868bc79c057eae1026e14af36" style="width: 100.0%; height: 100.0%;">         Location: Thippasandra , Bangalore , Karnataka , India<br>         Avg Rating: 2.86<br>         Cluster: Not Significant         </div>`)[0];
+                popup_f6dfd407add78b3f290f07b15b60130f.setContent(html_de5872d868bc79c057eae1026e14af36);
+            
+        
+
+        circle_marker_c3819620e10bcaf32bfb69be361798e1.bindPopup(popup_f6dfd407add78b3f290f07b15b60130f)
+        ;
+
+        
+    
+    
+            var circle_marker_fca7b818033de9191e017b7dc3faa9be = L.circleMarker(
+                [12.9778793, 77.6246697],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_df8f355221cd890b49b021cd6e049700 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8ea50ef04314b4697df8c6a4ab69006 = $(`<div id="html_b8ea50ef04314b4697df8c6a4ab69006" style="width: 100.0%; height: 100.0%;">         Location: Ulsoor , Bangalore , Karnataka , India<br>         Avg Rating: 3.47<br>         Cluster: Not Significant         </div>`)[0];
+                popup_df8f355221cd890b49b021cd6e049700.setContent(html_b8ea50ef04314b4697df8c6a4ab69006);
+            
+        
+
+        circle_marker_fca7b818033de9191e017b7dc3faa9be.bindPopup(popup_df8f355221cd890b49b021cd6e049700)
+        ;
+
+        
+    
+    
+            var circle_marker_493f5ce094a28c5e1e5908819b29b0f3 = L.circleMarker(
+                [12.9055682, 77.5455438],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_a6dcb5737b60d123f5bd302849823536 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5541e43a61751498a5c29c4def185a9d = $(`<div id="html_5541e43a61751498a5c29c4def185a9d" style="width: 100.0%; height: 100.0%;">         Location: Uttarahalli , Bangalore , Karnataka , India<br>         Avg Rating: 3.51<br>         Cluster: Not Significant         </div>`)[0];
+                popup_a6dcb5737b60d123f5bd302849823536.setContent(html_5541e43a61751498a5c29c4def185a9d);
+            
+        
+
+        circle_marker_493f5ce094a28c5e1e5908819b29b0f3.bindPopup(popup_a6dcb5737b60d123f5bd302849823536)
+        ;
+
+        
+    
+    
+            var circle_marker_a4581b330cfe281fc0e65d15501716cc = L.circleMarker(
+                [12.9592423, 77.7463002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_97c109de136ac9ee33178448a814b900 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46f383f98fb49c64016521bdf383955f = $(`<div id="html_46f383f98fb49c64016521bdf383955f" style="width: 100.0%; height: 100.0%;">         Location: Varthur Main Road, Whitefield , Bangalore , Karnataka , India<br>         Avg Rating: 3.21<br>         Cluster: Low-Low         </div>`)[0];
+                popup_97c109de136ac9ee33178448a814b900.setContent(html_46f383f98fb49c64016521bdf383955f);
+            
+        
+
+        circle_marker_a4581b330cfe281fc0e65d15501716cc.bindPopup(popup_97c109de136ac9ee33178448a814b900)
+        ;
+
+        
+    
+    
+            var circle_marker_4b5385447209909305ae830fb0b59e64 = L.circleMarker(
+                [12.9921738, 77.591459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_d9acd3ce56ebc663d56b17f835c859c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4221ab9f9511c567ef705723c42c7a7 = $(`<div id="html_c4221ab9f9511c567ef705723c42c7a7" style="width: 100.0%; height: 100.0%;">         Location: Vasanth Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 3.49<br>         Cluster: High-High         </div>`)[0];
+                popup_d9acd3ce56ebc663d56b17f835c859c9.setContent(html_c4221ab9f9511c567ef705723c42c7a7);
+            
+        
+
+        circle_marker_4b5385447209909305ae830fb0b59e64.bindPopup(popup_d9acd3ce56ebc663d56b17f835c859c9)
+        ;
+
+        
+    
+    
+            var circle_marker_3a507e272608e3a0e5b3e6fcd99dfaa6 = L.circleMarker(
+                [12.9061299, 77.5920538],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_7daa5fdaf5754645433838ec317b43bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a0ee73df758c7bfaa5402c78dcf7da1 = $(`<div id="html_8a0ee73df758c7bfaa5402c78dcf7da1" style="width: 100.0%; height: 100.0%;">         Location: Vijay Nagar , Bangalore , Karnataka , India<br>         Avg Rating: 2.45<br>         Cluster: Not Significant         </div>`)[0];
+                popup_7daa5fdaf5754645433838ec317b43bf.setContent(html_8a0ee73df758c7bfaa5402c78dcf7da1);
+            
+        
+
+        circle_marker_3a507e272608e3a0e5b3e6fcd99dfaa6.bindPopup(popup_7daa5fdaf5754645433838ec317b43bf)
+        ;
+
+        
+    
+    
+            var circle_marker_a24da181694bed5bc7ec430475f5e8b5 = L.circleMarker(
+                [12.9957428, 77.7579489],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_2acbde1014992c6a9238bb84741bda10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_818d656b71cb32f8a1cd1aec8252ff1a = $(`<div id="html_818d656b71cb32f8a1cd1aec8252ff1a" style="width: 100.0%; height: 100.0%;">         Location: Whitefield , Bangalore , Karnataka , India<br>         Avg Rating: 3.18<br>         Cluster: Low-Low         </div>`)[0];
+                popup_2acbde1014992c6a9238bb84741bda10.setContent(html_818d656b71cb32f8a1cd1aec8252ff1a);
+            
+        
+
+        circle_marker_a24da181694bed5bc7ec430475f5e8b5.bindPopup(popup_2acbde1014992c6a9238bb84741bda10)
+        ;
+
+        
+    
+    
+            var circle_marker_515b232c4579add552a9ec8bce56fecf = L.circleMarker(
+                [12.9489339, 77.5968273],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+    
+        var popup_9df1fd7a303bb24a7c4826bfd91a6039 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7581ec156e44a42847bdb68f43b38b4e = $(`<div id="html_7581ec156e44a42847bdb68f43b38b4e" style="width: 100.0%; height: 100.0%;">         Location: Wilson Garden , Bangalore , Karnataka , India<br>         Avg Rating: 3.27<br>         Cluster: High-High         </div>`)[0];
+                popup_9df1fd7a303bb24a7c4826bfd91a6039.setContent(html_7581ec156e44a42847bdb68f43b38b4e);
+            
+        
+
+        circle_marker_515b232c4579add552a9ec8bce56fecf.bindPopup(popup_9df1fd7a303bb24a7c4826bfd91a6039)
+        ;
+
+        
+    
+    
+            tile_layer_9c47ccdd55c7bad0a41b50549f18b5c4.addTo(map_307df00fd27c60c0280c0722b39893fd);
+        
+</script>
+</html>
