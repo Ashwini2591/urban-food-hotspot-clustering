@@ -54,7 +54,7 @@ A few practical uses for this kind of analysis:
 ## Dataset
 
 - Source: [Zomato Bangalore Restaurants](https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants) dataset on Kaggle (not included in this repo due to file size — download it from the link above)
-- Size: 56,201 rows × 17 columns
+- Size: 56,201 rows × 17 columns (raw); reduces to ~33,700 rows after removing duplicates and cleaning
 - Fields used: restaurant name, latitude, longitude, rating
 
 ## Repo structure
