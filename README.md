@@ -13,11 +13,11 @@ The analysis follows the CRISP-DM framework and uses restaurant coordinates and 
 
 All maps below are interactive — open the `.html` files to zoom, pan, and click on clusters for details.
 
-- [Restaurant density heatmap](outputs/heatmap.html)
-- [DBSCAN clusters](outputs/dbscan_hotspot_map.html)
-- [HDBSCAN clusters](outputs/hdbscan_hotspot_map.html)
-- [K-Means clusters](outputs/kmeans_hotspot_map.html)
-- [LISA hotspot map (final result)](outputs/lisa_hotspot_map.html)
+- [Restaurant density heatmap](https://ashwini2591.github.io/urban-food-hotspot-clustering/outputs/heatmap.html)
+- [DBSCAN clusters](https://ashwini2591.github.io/urban-food-hotspot-clustering/outputs/dbscan_hotspot_map.html)
+- [HDBSCAN clusters](https://ashwini2591.github.io/urban-food-hotspot-clustering/outputs/hdbscan_hotspot_map.html)
+- [K-Means clusters](https://ashwini2591.github.io/urban-food-hotspot-clustering/outputs/kmeans_hotspot_map.html)
+- [LISA hotspot map (final result)](https://ashwini2591.github.io/urban-food-hotspot-clustering/outputs/lisa_hotspot_map.html)
 
 ## Choosing a clustering method
 
